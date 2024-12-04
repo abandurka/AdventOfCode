@@ -17,6 +17,4 @@ let res =
 
 printfn "result is %d" res
 
-printfn "result is %d" res
-
 //138
