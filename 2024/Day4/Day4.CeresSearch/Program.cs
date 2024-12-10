@@ -6,20 +6,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        var t = new[]
-        {
-            "MMMSXXMASM",
-            "MSAMXMSMSA",
-            "AMXSXMAAMM",
-            "MSAMASMSMX",
-            "XMASAMXAMM",
-            "XXAMMXXAMA",
-            "SMSMSASXSS",
-            "SAXAMASAAA",
-            "MAMMMXMMMM",
-            "MXMXAXMASX"
-        };
-
         var lines = FileParser.LoadLines(StringConstants.DefaultPath);
 
         var count = 0;
