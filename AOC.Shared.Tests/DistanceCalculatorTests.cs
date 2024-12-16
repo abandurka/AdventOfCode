@@ -1,6 +1,6 @@
 ﻿using Day1.HistorianHysteria.Console;
 
-namespace Day1.HistorianHysteria.Tests;
+namespace AOC.Shared.Tests;
 
 [Category("Day1.HistorianHysteria")]
 public class DistanceCalculatorTests

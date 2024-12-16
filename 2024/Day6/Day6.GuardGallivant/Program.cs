@@ -13,6 +13,7 @@ class Program
 
         var (row, col, direction) = GetStartingPosition(lines);
 
+        var allmoves = new List<(int, int, Solver.Direction)>();
         var steps = new HashSet<(int, int)>();
         while (true)
         {
@@ -25,9 +26,12 @@ class Program
 
             (row, col, direction) = Solver.GetNextStep(lines, row, col, direction);
             steps.Add((row,col));
+            allmoves.Add((row, col, direction));
         }
 
-        Console.WriteLine($"Day 6: Guard Gallivant = {steps.Count()}");
+        Console.WriteLine($"Day 6: Guard Gallivant = {steps.Count}");
+
+        Console.WriteLine($"Day6 p2");
     }
 
     private static (int row, int col, Solver.Direction direction) GetStartingPosition(char[][] lines)
